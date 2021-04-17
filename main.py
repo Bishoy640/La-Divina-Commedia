@@ -67,7 +67,7 @@ canti = ["Inferno/Canto I", "Inferno/Canto II", "Inferno/Canto III", "Inferno/Ca
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 # Put image directory
-img = cv2.imread("Capture9.png")
+img = cv2.imread("Capture.PNG")
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 kernel = np.ones((1, 1), np.uint8)
 img = cv2.dilate(img, kernel, iterations=1)
@@ -75,52 +75,65 @@ img = cv2.erode(img, kernel, iterations=1)
 img = cv2.resize(img, None, fx=1.2, fy=1.2, interpolation=cv2.INTER_CUBIC)
 text = pytesseract.image_to_string(img, lang='ita')
 text = text.replace("’", "'").strip().replace("‘", "'").replace("”", "\"")
+text_list = []
+text_list.append(text)
+
+# GET THE FIRST LINE IN CASE OF AN INPUT OF MANY LINES
+if '\n' in text:
+    text_list = text.splitlines()
+
+print(text_list)
+
 
 # INTIALIZING
 canti_formated = []
 
 remove_chars = ["/", " "]
+# I FEEL that the folowing code is useless so I COMMENTED IT OUT
 
 # REFORMATTING CANTI NAMES TO OPEN THEIR FILES
-for canto in canti:
-    for char in remove_chars:
-        canto = canto.replace(char, "_")
-    canti_formated.append(canto)
+# for canto in canti:
+#     for char in remove_chars:
+#         canto = canto.replace(char, "_")
+#     canti_formated.append(canto)
 
 # page_counter to access data of the JSON file (DONT CHANGE PLS)
-page_counter = 1352
+# page_counter = 1352
 
 # SEARCH ENTERING MANY LINES AND RETURNING ONLY THE CANTICA AND CANTO INFORMATIONS ONLY (ex: Purgatorio_Canto_XIX)
-for canto in canti_formated:
-    file_canti = open("./data/"+canto + ".json", "r")
-    data = json.load(file_canti)
-    clean_text = clean(data['query']['pages'][str(page_counter)]['revisions'][0]['*'])
-    if text in clean_text:
-        print(canto)
 
-    if page_counter == 1352:
-        page_counter = page_counter + 2
-    elif page_counter == 1419:
-        page_counter = 1463
-    else:
-        page_counter = page_counter + 1
-    file_canti.close()
+# for canto in canti_formated:
+#     file_canti = open("./data/"+canto + ".json", "r")
+#     data = json.load(file_canti)
+#     clean_text = clean(data['query']['pages'][str(page_counter)]['revisions'][0]['*'])
+#
+#     if page_counter == 1352:
+#         page_counter = page_counter + 2
+#     elif page_counter == 1419:
+#         page_counter = 1463
+#     else:
+#         page_counter = page_counter + 1
+#     file_canti.close()
+
 
 # TO SHOW THE INPUT IMAGE (NB: can be commented if u want)
 # plt.imshow(img, cmap='gray')
-# plt.shimshow(img, cmap='gray')
 # plt.show()
 
 
 # SEARCH ONLY BY VERSO RETURNINIG ALL INFORMATIONS
-# just an example
-text_in_verso = "m’asseggia"
-text_in_verso = text_in_verso.replace("’", "'").strip().replace("‘", "'").replace("”", "\"")
 
-print()
+# Cleaning text
+for i in range(len(text_list)):
+    text_list[i] = text_list[i].replace("’", "'").strip().replace("‘", "'").replace("”", "\"")
+
 divina_json = open("./data/divina_commedia.json", "r")
 divina = json.load(divina_json)
 info = divina['children']
+
+# Initializing lists
+num_riga = []
+num_terzine = []
 
 for cantica in info:
     for canto in cantica['children']:
@@ -128,7 +141,31 @@ for cantica in info:
             for riga in terzine['children']:
                 riga['text'] = riga['text'].replace("’", "'").strip().replace("‘", "'").replace("”", "\"")
 
-                if text_in_verso in riga['text']:
+                if text_list[0] in riga['text']:
                     print("Cantica:", cantica['name'])
                     print(canto['name'])
-                    print("Riga:", terzine['number'])
+                    num_riga.append(riga['number'])
+                    num_terzine.append(terzine['number'])
+                if text_list[-1] in riga['text'] and len(text_list) > 1:
+                    num_riga.append(riga['number'])
+                    num_terzine.append(terzine['number'])
+
+# Calculate the number of riga and formatting it to letters
+for i in range(len(num_riga)):
+    num_riga[i] = num_riga[i]%3
+    if num_riga[i] == 0:
+        num_riga[i] = 3
+    if num_riga[i] == 1:
+        num_riga[i] = "Prima"
+    if num_riga[i] == 2:
+        num_riga[i] = "Seconda"
+    if num_riga[i] == 3:
+        num_riga[i] = "Terza"
+
+# Formating output
+if len(num_riga) > 1:
+    print("{} riga della {} terzina fino alla {} riga della {} terzina".format(num_riga[0], num_terzine[0], num_riga[-1], num_terzine[-1]))
+elif len(num_riga) == 1:
+    print("{} riga della {} terzina".format(num_riga[0], num_terzine[0]))
+
+divina_json.close()
