@@ -64,7 +64,7 @@ canti = ["Inferno/Canto I", "Inferno/Canto II", "Inferno/Canto III", "Inferno/Ca
          "Paradiso/Canto XXXII", "Paradiso/Canto XXXIII"]
 
 # CONPUTER VISION AND TESSERACT
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 # Put image directory
 img = cv2.imread("Capture.PNG")
