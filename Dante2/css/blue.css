@@ -1,0 +1,108 @@
+/* Theme Name: Moltus - Business Template
+   Author:Harry
+   Author e-mail: harrynworld@gmail.com
+   Version: 1.0.0
+   Created:January 2015
+   File Description: Color-blue css file
+*/
+
+a:hover,a:focus,a:active,.social-icons i:hover,.twitter_tweet i,.twitter_tweet p,#ajaxsuccess,
+.navbar-custom .navbar-nav>.active>a, .navbar-custom .navbar-nav>.active>a:hover, .navbar-custom .navbar-nav>.active>a:focus,
+.navbar-custom .navbar-nav>.open>a, .navbar-custom .navbar-nav>.open>a:hover, .navbar-custom .navbar-nav>.open>a:focus,
+.navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,
+.navbar-custom .navbar-nav>li>a:hover,
+.md-content h5 {
+	color: #1aace7;
+}
+.btn-custom,.btn-custom-sm,.back-to-top{
+	background-color: #1aace7;
+}
+.form-control:focus,.btn-custom,.btn-custom-sm {
+	border-color: #1aace7;
+}
+.titleHR span {
+	background: none repeat scroll 0 0 #1aace7; 
+}
+
+.s003 .inner-form .input-field.third-wrap .btn-search:hover {
+	background-color: #1aace7;
+	border-radius: 20px;
+  }
+
+  .s003 .inner-form .input-field input:hover, .s003 .inner-form .input-field input:focus{
+   border-bottom-color: #1aace7;
+}
+
+.services-item{
+   background-color: #1aace7;
+}
+
+@keyframes slide1 {
+	0%{
+		opacity: 0;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)),url("/images/inferno1.jpeg");
+	}
+	100%{
+		opacity: 1;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)),url("/images/inferno1.jpeg");
+	}
+}
+@keyframes slide2 {
+	0%{
+		opacity: 0;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)),url("/images/purgatorio.jpeg");
+		
+	}
+	100%{
+		opacity: 1;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)),url("/images/purgatorio.jpeg");
+	}
+}
+
+@keyframes slide3 {
+	0%{
+		opacity: 0;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)), url("/images/paradiso.jpeg");
+		
+	}
+	100%{
+		opacity: 1;
+		background-image:linear-gradient(to bottom, rgba(26, 172, 231, 0),rgba(26, 172, 231, 0.7),rgba(26, 172, 231, 1)), url("/images/paradiso.jpeg");
+	}
+}
+select{
+   background-color: #1aace7;
+}
+
+
+.file-upload-btn{
+	background-color: #1aace7;
+	border-bottom: 4px solid #0f749c;
+}
+
+.file-upload-btn:hover{
+	background-color:#229ecf;
+}
+
+.image-upload-wrap{
+	border-color:#1aace7;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: rgba(34, 158, 207,0.7);
+  color:white
+}
+
+.drag-text h3{
+	color:#2484aa;
+}
+
+.submit{
+	background-color: #1aace7;
+	border-bottom: 4px solid #0f749c;
+}
+
+.submit:hover{
+	  background-color: #229ecf;
+}
