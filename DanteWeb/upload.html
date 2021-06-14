@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--
+	Delex by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+
+  <!-- Site Title-->
+  <title>Dante Alighieri | Carica</title>
+
+  <!-- Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Google-fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/all.min.css">
+
+  <!-- Dante_Icon -->
+  <link rel="icon" href="/images/Dante_icon.ico">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- Fonts-style -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Fonts-style -->
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <!-- Modal-Effect -->
+  <link href="/css/component.css" rel="stylesheet">
+  <!-- owl-carousel -->
+  <link href="/css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="/css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+  <!-- Template Styles-->
+  <link rel="stylesheet" href="/css/styleUpload.css" />
+  <!-- Template Color-->
+  <link rel="stylesheet" type="text/css" href="/css/green.css" media="screen" id="color-opt" />
+
+
+
+</head>
+
+<body data-spy="scroll" data-offset="80">
+
+  <!-- Preloader -->
+  <div class="animationload">
+    <div class="loader">
+    </div>
+  </div>
+  <!-- End Preloader -->
+
+
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html">Dante Alighieri</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/index.html">Casa</a></li>
+          <li><a href="/La_Commedia.html">La Divina Commedia</a></li>
+          <li><a href="#home">Carica</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+  <!-- /HOME -->
+  <section class="main-home" id="home">
+    <div class="home-page-photo"></div> <!-- Background image -->
+    <div class="home__header-content">
+      <div id="main-home-carousel" class="owl-carousel">
+        <div>
+          <h1 class="intro-title">Leggi su Dante e la sua opera.</h1>
+          <p class="intro-text">Il sito contiene diversi informazioni su Dante <br /> e la sua opera più famosa, "La
+            Divina Commedia".</p>
+          <a class="btn btn-custom" href="index.html">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div>
+          <h1 class="intro-title">Analizza i canti</h1>
+          <p class="intro-text">Il sito ti permette a leggere tutti i canti presenti nella Divina Commedia</p><br>
+          <a class="btn btn-custom" href="/La_Commedia.html">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div>
+          <h1 class="intro-title">Utilizza l'Intelligenza artificiale</h1>
+          <p class="intro-text">Ecco il primo sito ti permette ad analizzare ed estrarre i diversi canti della Divina
+            Commedia da un foto<br>
+            Utilizzando l'Intelligenza artificiale! </p>
+          <a class="btn btn-custom" href="#goto">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div id="tab-color">
+          <h1 class="intro-title">Scegli il tuo colore</h1>
+          <p class="intro-text">Scegli il tuo colore preferito premendo sul bottone a sinistra</p><br>
+          <div id="viualizza">
+            <a class="btn btn-custom settings" href="#">Visualizza</a>
+          </div>
+          <p style="color: black; font-size: medium; font-weight: bold; ">- Disponobile solo per i tablet e pc</p>
+
+        </div>
+        <!--slide item like paragraph-->
+      </div>
+    </div>
+  </section>
+  <!-- /End HOME -->
+
+  <div id="goto"></div>
+  <br>
+  <div class="file-upload" id="upload_section">
+    <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">
+      Aggiungi una foto
+    </button>
+
+    <div class="image-upload-wrap">
+      <input class="file-upload-input" type='file' onchange="readURLL(this);" accept="image/*" />
+      <div class="drag-text">
+        <h3>Trascina e rilascia un file o seleziona aggiungi immagine</h3>
+      </div>
+    </div>
+    <div class="file-upload-content">
+      <img class="file-upload-image" src="#" alt="your image" />
+      <div class="image-title-wrap">
+        <button type="button" onclick="removeUpload()" class="remove-image">Cancella <span class="image-title">Uploaded
+            Image</span></button>
+        <button type="submit" onclick="submit()" class="remove-image submit">Conferma</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hide-loader"></div>
+  <br><br><br>
+
+
+
+  <!-- Scroll top -->
+  <a href="#" class="back-to-top" style="font-size: 17px; font-weight: bold;">
+    <i style="margin-top: 12px; color:white;" class="fa fa-chevron-up"> </i>
+  </a>
+
+
+  <!-- Style switcher -->
+  <div id="style-switcher" style="left: 0px;">
+    <div>
+      <h3>Secgli un colore</h3>
+      <ul class="pattern">
+        <li><a class="color1" href="#"></a></li>
+        <li><a class="color2" href="#"></a></li>
+        <li><a class="color3" href="#"></a></li>
+        <li><a class="color4" href="#"></a></li>
+        <li><a class="color5" href="#"></a></li>
+        <li><a class="color6" href="#"></a></li>
+        <li><a class="color7" href="#"></a></li>
+        <li><a class="color8" href="#"></a></li>
+        <li><a class="color9" href="#"></a></li>
+        <li><a class="color10" href="#"></a></li>
+        <li><a class="color11" href="#"></a></li>
+        <li><a class="color12" href="#"></a></li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <a href="#" class="settings"><i class="fas fa-fill-drip"></i></a>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-bottom text-center">
+      <!-- Footer-copyright -->
+      <p>
+        &copy; &nbsp;
+        <script>document.write(new Date().getFullYear())</script>
+        &nbsp;Creato da Bishoy Kamel e Abanoub wagih
+      </p>
+    </div>
+  </footer>
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalresult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLongTitle">Il Risultato Ai</h2>
+          <button type="button" class="close" style="margin-top: -33px; font-size: 30px;" data-dismiss="modal"
+            aria-label="Close">
+            <i class="far fa-times-circle"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 id="result2" ></h3>
+          <p id="result" style="color:black;font-size:14px;">
+            <mark id="resultMark" style="background-color:rgba(183, 134, 11,0.6);">
+
+            </mark>
+          </p>
+          
+          
+          
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- end Style switcher -->
+
+
+  <!-- JavaScript
+     ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- initialize jQuery Library -->
+  <script src="/js/jquery.min.js"></script>
+  <!-- jquery easing -->
+  <script src="/js/jquery.easing.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- modal-effect -->
+  <script src="/js/classie.js"></script>
+  <script src="/js/modalEffects.js"></script>
+  <!-- Counter-up -->
+  <script src="/js/waypoints.min.js" type="text/javascript"></script>
+  <script src="/js/jquery.counterup.min.js" type="text/javascript"></script>
+
+  <!-- Parallax -->
+  <script src="/js/jquery.stellar.min.js"></script>
+  <!-- Jquery-Nav -->
+  <script src="/js/jquery.nav.js"></script>
+  <!-- Owl carousel -->
+  <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+  <!-- App JS -->
+  <script src="/js/app.js"></script>
+
+  <!-- Fontawesome -->
+  <script type="text/javascript" src="/js/all.min.js"></script>
+
+  <!-- Switcher script for demo only -->
+  <script type="text/javascript" src="/js/switcher.js"></script>
+  <script type="text/javascript" src="/js/upload.js"></script>
+
+  <!-- tesseract -->
+  <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+
+  <script type="text/javascript" src="/divina_commedia.json"></script>
+
+  <!-- SmoothScroll -->
+  <script src="js/SmoothScroll.js"></script>
+
+  <script>
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        // var ele = document.getElementById("tab-color");
+        // ele.remove();
+        $("#tab-color").remove();
+      }
+      else {
+        $("#tab-color").appendTo("#main-home-carousel")
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 450px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+  </script>
+
+
+
+</body>
+
+</html>
