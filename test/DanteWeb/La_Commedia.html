@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--
+	Delex by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+
+  <!-- Site Title-->
+  <title>Dante Alighieri | La Commedia</title>
+
+  <!-- Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Google-fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Kameron:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/css/all.min.css">
+
+  <!-- Dante_Icon -->
+  <link rel="icon" href="/images/Dante_icon.ico">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!-- Fonts-style -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- Fonts-style -->
+  <link rel="stylesheet" href="/css/font-awesome.min.css" />
+  <!-- Modal-Effect -->
+  <link href="/css/component.css" rel="stylesheet">
+  <!-- owl-carousel -->
+  <link href="/css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="/css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+  <!-- Template Styles-->
+  <link rel="stylesheet" href="/css/styleCommedia.css" />
+  <!-- Template Color-->
+  <link rel="stylesheet" type="text/css" href="/css/green.css" media="screen" id="color-opt" />
+
+</head>
+
+<body data-spy="scroll" data-offset="80">
+
+  <!-- Preloader -->
+  <div class="animationload">
+    <div class="loader">
+    </div>
+  </div>
+  <!-- End Preloader -->
+
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/index.html">Dante Alighieri</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/index.html">Casa</a></li>
+          <li><a href="#home">La Divina Commedia</a></li>
+          <li><a href="/upload.html">Carica</a></li>
+          <li>
+            <div class="s003">
+                <div class="inner-form">
+                  <div class="input-field second-wrap">
+                    <input id="myInput" type="text" placeholder="Parola chiave?" required/>
+                  </div>
+                  <div class="input-field third-wrap">
+                    <button class="btn-search" onclick="search();" type="button">
+                      <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas"
+                        data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                          d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                        </path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              <!-- <div class="s003">
+                <input id="search" value="Some text..">
+                <button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+              </div> -->
+
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
+  <!-- /HOME -->
+  <section class="main-home" id="home">
+    <div class="home-page-photo"></div> <!-- Background image -->
+    <div class="home__header-content">
+      <div id="main-home-carousel" class="owl-carousel">
+        <div>
+          <h1 class="intro-title">Leggi su Dante e la sua opera.</h1>
+          <p class="intro-text">Il sito contiene diversi informazioni su Dante <br /> e la sua opera più famosa, "La
+            Divina Commedia".</p>
+          <a class="btn btn-custom" href="index.html">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div>
+          <h1 class="intro-title">Analizza i canti</h1>
+          <p class="intro-text">Il sito ti permette a leggere tutti i canti presenti nella Divina Commedia</p><br>
+          <a class="btn btn-custom" href="#services">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div>
+          <h1 class="intro-title">Utilizza l'Intelligenza artificiale</h1>
+          <p class="intro-text">Ecco il primo sito ti permette ad analizzare ed estrarre i diversi canti della Divina
+            Commedia da una foto<br>
+            Utilizzando l'Intelligenza artificiale! </p>
+          <a class="btn btn-custom" href="upload.html">Visualizza</a>
+        </div>
+        <!--slide item like paragraph-->
+
+        <div id="tab-color">
+          <h1 class="intro-title">Scegli il tuo colore</h1>
+          <p class="intro-text">Scegli il tuo colore preferito premendo sul bottone a sinistra</p><br>
+          <div id="viualizza">
+            <a class="btn btn-custom settings" href="#">Visualizza</a>
+          </div>
+          <p style="color: black; font-size: medium; font-weight: bold; ">- Disponobile solo per i tablet e pc</p>
+
+        </div>
+        <!--slide item like paragraph-->
+      </div>
+    </div>
+  </section>
+  <!-- /End HOME -->
+
+  <!-- / SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="title text-center">Le 3 Cantiche</h3>
+          <div class="titleHR"><span></span></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 item1">
+          <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border">
+                <i><img src="/images/hell.png" alt="img" width="70px" height="70px"></i>
+              </div>
+              <h5>Inferno</h5>
+              <p>L'inferno è raffigurato come nove cerchi concentrici di tormento situati all'interno della Terra; è il
+                "regno di coloro che hanno rifiutato i valori spirituali cedendo ad appetiti bestiali o alla violenza.
+              </p><br><br>
+            </div>
+            <hr>
+            <form>
+              <label for="list1">I Canti :</label><br>
+                <select id="list1" onchange="getSelectValue(this.id);">
+                  <option>sceglie un canto</option>
+                  <option value="Canto I"><strong>Canto I</strong></option>
+                  <option value="Canto II"><strong>Canto II</strong></option>
+                  <option value="Canto III"><strong>Canto III</strong></option>
+                  <option value="Canto IV"><strong>Canto IV</strong></option>
+                  <option value="Canto V"><strong>Canto V</strong></option>
+                  <option value="Canto VI"><strong>Canto VI</strong></option>
+                  <option value="Canto VII"><strong>Canto VII</strong></option>
+                  <option value="Canto VIII"><strong>Canto VIII</strong></option>
+                  <option value="Canto VIIII"><strong>Canto IX</strong></option>
+                  <option value="Canto X"><strong>Canto X</strong></option>
+                  <option value="Canto XI"><strong>Canto XI</strong></option>
+                  <option value="Canto XII"><strong>Canto XII</strong></option>
+                  <option value="Canto XIII"><strong>Canto XIII</strong></option>
+                  <option value="Canto XIV"><strong>Canto XIV</strong></option>
+                  <option value="Canto XV"><strong>Canto XV</strong></option>
+                  <option value="Canto XVI"><strong>Canto XVI</strong></option>
+                  <option value="Canto XVII"><strong>Canto XVII</strong></option>
+                  <option value="Canto XVIII"><strong>Canto XVIII</strong></option>
+                  <option value="Canto XVIIII"><strong>Canto XIX</strong></option>
+                  <option value="Canto XX"><strong>Canto XX</strong></option>
+                  <option value="Canto XXI"><strong>Canto XXI</strong></option>
+                  <option value="Canto XXII"><strong>Canto XXII</strong></option>
+                  <option value="Canto XXIII"><strong>Canto XXIII</strong></option>
+                  <option value="Canto XXIV"><strong>Canto XXIV</strong></option>
+                  <option value="Canto XXV"><strong>Canto XXV</strong></option>
+                  <option value="Canto XXVI"><strong>Canto XXVI</strong></option>
+                  <option value="Canto XXVII"><strong>Canto XXVII</strong></option>
+                  <option value="Canto XXVIII"><strong>Canto XXVIII</strong></option>
+                  <option value="Canto XXVIIII"><strong>Canto XXIX</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXX</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXI</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXII</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXIII</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXIV</strong></option>
+                </select>
+              <!-- <datalist id="canti-list">
+                  <option value="Canto I"></option>
+                  <option value="Canto II"></option>
+                  <option value="Canto III"></option>
+                  <option value="Canto IV"></option>
+                  <option value="Canto V"></option>
+                  <option value="Canto VI"></option>
+                  <option value="Canto VI"></option>
+                  <option value="Canto VIII"></option>
+                  <option value="Canto VIIII"></option>
+                  <option value="Canto X"></option>
+                </datalist> -->
+            </form>
+
+          </div>
+        </div>
+
+        <div class="col-sm-4 item2">
+          <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border">
+                <i><img src="/images/heaven.png" alt="img" height="70px" width="70px"></i>
+              </div>
+              <h5>Purgatorio</h5>
+              <p>Il Purgatorio nel poema è raffigurato come una montagna nell'emisfero australe, costituito da una
+                sezione inferiore (Antipurgatorio), sette livelli di sofferenza e crescita spirituale, e infine il
+                Paradiso Terrestre in alto.</p><br>
+            </div>
+            <hr>
+            <form>
+              <label for="list2">I Canti :</label><br>
+                <select id="list2" onchange="getSelectValue(this.id);">
+                  <option>sceglie un canto</option>
+                  <option value="Canto I"><strong>Canto I</strong></option>
+                  <option value="Canto II"><strong>Canto II</strong></option>
+                  <option value="Canto III"><strong>Canto III</strong></option>
+                  <option value="Canto IV"><strong>Canto IV</strong></option>
+                  <option value="Canto V"><strong>Canto V</strong></option>
+                  <option value="Canto VI"><strong>Canto VI</strong></option>
+                  <option value="Canto VII"><strong>Canto VII</strong></option>
+                  <option value="Canto VIII"><strong>Canto VIII</strong></option>
+                  <option value="Canto VIIII"><strong>Canto IX</strong></option>
+                  <option value="Canto X"><strong>Canto X</strong></option>
+                  <option value="Canto XI"><strong>Canto XI</strong></option>
+                  <option value="Canto XII"><strong>Canto XII</strong></option>
+                  <option value="Canto XIII"><strong>Canto XIII</strong></option>
+                  <option value="Canto XIV"><strong>Canto XIV</strong></option>
+                  <option value="Canto XV"><strong>Canto XV</strong></option>
+                  <option value="Canto XVI"><strong>Canto XVI</strong></option>
+                  <option value="Canto XVII"><strong>Canto XVII</strong></option>
+                  <option value="Canto XVIII"><strong>Canto XVIII</strong></option>
+                  <option value="Canto XVIIII"><strong>Canto XIX</strong></option>
+                  <option value="Canto XX"><strong>Canto XX</strong></option>
+                  <option value="Canto XXI"><strong>Canto XXI</strong></option>
+                  <option value="Canto XXII"><strong>Canto XXII</strong></option>
+                  <option value="Canto XXIII"><strong>Canto XXIII</strong></option>
+                  <option value="Canto XXIV"><strong>Canto XXIV</strong></option>
+                  <option value="Canto XXV"><strong>Canto XXV</strong></option>
+                  <option value="Canto XXVI"><strong>Canto XXVI</strong></option>
+                  <option value="Canto XXVII"><strong>Canto XXVII</strong></option>
+                  <option value="Canto XXVIII"><strong>Canto XXVIII</strong></option>
+                  <option value="Canto XXVIIII"><strong>Canto XXIX</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXX</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXI</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXII</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXIII</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXXIV</strong></option>
+                </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-sm-4 item3">
+          <!-- Service-item -->
+          <div class="text-center services-item">
+            <div class="col-wrapper">
+              <div class="icon-border">
+                <i><img src="/images/angel.png" alt="img" width="70px" height="70px" style="align-items: center;"></i>
+                <br>
+              </div>
+              <h5>Paradiso</h5>
+              <p>Il Paradiso è raffigurato come una serie di sfere concentriche che circondano la Terra, formate dalla
+                Luna, Mercurio, Venere, Sole, Marte, Giove, Saturno, le Stelle Fisse, il Primum Mobile e infine
+                l'Empireo. Fu scritto all'inizio del XIV secolo. Allegoricamente, il poema rappresenta l'ascesa
+                dell'anima a Dio..</p>
+            </div>
+            <hr>
+            <form>
+              <label for="list3">I Canti :</label><br>
+              <select id="list3" onchange="getSelectValue(this.id);">
+                <option>sceglie un canto</option>
+                  <option value="Canto I"><strong>Canto I</strong></option>
+                  <option value="Canto II"><strong>Canto II</strong></butt>
+                  <option value="Canto III"><strong>Canto III</strong></option>
+                  <option value="Canto IV"><strong>Canto IV</strong></option>
+                  <option value="Canto V"><strong>Canto V</strong></option>
+                  <option value="Canto VI"><strong>Canto VI</strong></option>
+                  <option value="Canto VII"><strong>Canto VII</strong></option>
+                  <option value="Canto VIII"><strong>Canto VIII</strong></option>
+                  <option value="Canto VIX"><strong>Canto IX</strong></option>
+                  <option value="Canto X"><strong>Canto X</strong></option>
+                  <option value="Canto XI"><strong>Canto XI</strong></option>
+                  <option value="Canto XII"><strong>Canto XII</strong></option>
+                  <option value="Canto XIII"><strong>Canto XIII</strong></option>
+                  <option value="Canto XIV"><strong>Canto XIV</strong></option>
+                  <option value="Canto XV"><strong>Canto XV</strong></option>
+                  <option value="Canto XVI"><strong>Canto XVI</strong></option>
+                  <option value="Canto XVII"><strong>Canto XVII</strong></option>
+                  <option value="Canto XVIII"><strong>Canto XVIII</strong></option>
+                  <option value="Canto XIX"><strong>Canto XIX</strong></option>
+                  <option value="Canto XX"><strong>Canto XX</strong></option>
+                  <option value="Canto XXI"><strong>Canto XXI</strong></option>
+                  <option value="Canto XXII"><strong>Canto XXII</strong></option>
+                  <option value="Canto XXIII"><strong>Canto XXIII</strong></option>
+                  <option value="Canto XXIV"><strong>Canto XXIV</strong></option>
+                  <option value="Canto XXV"><strong>Canto XXV</strong></option>
+                  <option value="Canto XXVI"><strong>Canto XXVI</strong></option>
+                  <option value="Canto XXVII"><strong>Canto XXVII</strong></option>
+                  <option value="Canto XXVIII"><strong>Canto XXVIII</strong></option>
+                  <option value="Canto XXVIX"><strong>Canto XXIX</strong></option>
+                  <option value="Canto XXX"><strong>Canto XXX</strong></option>
+                  <option value="Canto XXXI"><strong>Canto XXXI</strong></option>
+                  <option value="Canto XXXII"><strong>Canto XXXII</strong></option>
+                  <option value="Canto XXXIII"><strong>Canto XXXIII</strong></option>
+                  <option value="Canto XXXIV"><strong>Canto XXXIV</strong></option>
+              </select>
+          
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--/.row -->
+    </div>
+    <!--/.row -->
+    </div>
+    <!--/.container -->
+  </section>
+  <!-- / End services-->
+
+
+  <footer>
+    <div class="footer-bottom text-center">
+      <!-- Footer-copyright -->
+      <p>
+        &copy; &nbsp;<script>document.write(new Date().getFullYear())</script>
+        &nbsp;Creato da Bishoy Kamel e Abanoub wagih
+      </p>
+    </div>
+  </footer>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLongTitle">Il Risultato</h2>
+        <button type="button" class="close" style="margin-top: -33px; font-size: 30px;" data-dismiss="modal" aria-label="Close">
+          <i class="far fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body modal-in">
+        <h3 id="resultS2" ></h3>
+        <p id="result" style="font-size: 14px; color:black">
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCanto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="CantoName">Modal title</h2>
+        <button type="button" class="close" style="margin-top: -30px; font-size: 30px;" data-dismiss="modal" aria-label="Close">
+          <i class="far fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="modal-body modal-in">
+        <h3 id="result2" ></h3>
+        <p id="Presult2"  style="font-size: 14px; color:black;text-align: justify; align-self: center;">
+
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+  <!-- Scroll top -->
+  <a href="#" class="back-to-top" >
+    <i style="margin-top: 12px; color:white; font-size: 17px; font-weight: bold;" class="fa fa-chevron-up"> </i> 
+  </a>
+
+
+  <!-- Style switcher -->
+  <div id="style-switcher" style="left: 0px;">
+    <div>
+      <h3>Secgli un colore</h3>
+      <ul class="pattern">
+        <li><a class="color1" href="#"></a></li>
+        <li><a class="color2" href="#"></a></li>
+        <li><a class="color3" href="#"></a></li>
+        <li><a class="color4" href="#"></a></li>
+        <li><a class="color5" href="#"></a></li>
+        <li><a class="color6" href="#"></a></li>
+        <li><a class="color7" href="#"></a></li>
+        <li><a class="color8" href="#"></a></li>
+        <li><a class="color9" href="#"></a></li>
+        <li><a class="color10" href="#"></a></li>
+        <li><a class="color11" href="#"></a></li>
+        <li><a class="color12" href="#"></a></li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <a href="#" class="settings"><i class="fas fa-fill-drip"></i></a>
+    </div>
+  </div>
+  <!-- end Style switcher -->
+
+
+  <!-- JavaScript
+     ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- initialize jQuery Library -->
+
+  <script src="/js/jquery.min.js"></script>
+  <!-- jquery easing -->
+  <script src="/js/jquery.easing.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!-- modal-effect -->
+  <script src="/js/classie.js"></script>
+  <script src="/js/modalEffects.js"></script>
+  <!-- Counter-up -->
+  <script src="/js/waypoints.min.js" type="text/javascript"></script>
+  <script src="/js/jquery.counterup.min.js" type="text/javascript"></script>
+ 
+  <!-- Parallax -->
+  <script src="/js/jquery.stellar.min.js"></script>
+  <!-- Jquery-Nav -->
+  <script src="/js/jquery.nav.js"></script>
+  <!-- Owl carousel -->
+  <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+  <!-- App JS -->
+  <script src="/js/app.js"></script>
+
+  <!-- Fontawesome -->
+  <script type="text/javascript" src="/js/all.min.js"></script>
+
+  <!-- Switcher script for demo only -->
+  <script type="text/javascript" src="/js/switcher.js"></script>
+  
+  <!-- SmoothScroll -->
+  <script src="js/SmoothScroll.js"></script>
+
+  <script src="/js/commedia.js"></script>
+  
+  <script>
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        // var ele = document.getElementById("tab-color");
+        // ele.remove();
+        $("#tab-color").remove();
+      } 
+      else {
+        $("#tab-color").appendTo("#main-home-carousel")
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 450px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+  </script>
+
+
+  <!-- search bar -->
+  <!-- <script>
+    $(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() { 
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 210) {
+                $('.btn-search').css('color', '#000');
+                $('.input-field input').css('color', '#000');
+                $('.input-field input').css('border-color', '#000');
+            } else {
+                $('.btn-search').css('color', '#fff');
+                $('.input-field input').css('color', '#fff');
+                $('.input-field input').css('border-color', '#fff');
+                
+            }
+        });
+    });
+    </script> -->
+
+
+
+
+</body>
+
+</html>
